@@ -1,3 +1,6 @@
+
+require('dotenv').config()
+
 module.exports = {
   /*
   ** Headers of the page
@@ -28,7 +31,7 @@ module.exports = {
     ]
   ],
   /*
-  ** Load Plugins and Components
+  * Load Plugins and Components
   */
   plugins: [
     '~/plugins/global.js'
@@ -53,9 +56,9 @@ module.exports = {
   },
   env: {
     cockpit: {
-      apiUrl: 'https://api.pxlwrx.de/index.php/rest/api',
-      apiToken: 'f3b3fe831cf19cd4505283dc2b6ff8',
-      baseUrl: 'https://api.pxlwrx.de'
+      apiUrl: process.env.API_URL,
+      apiToken: process.env.API_TOKEN,
+      baseUrl: process.env.BASE_URL
     }
   }
 }
