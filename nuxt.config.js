@@ -27,7 +27,8 @@ module.exports = {
     // provide path to the file with resources
     [
       'nuxt-sass-resources-loader',
-      './assets/main.scss'
+      './assets/main.scss',
+      ['nuxt-buefy', { css: false, materialDesignIcons: false }]
     ]
   ],
   /*

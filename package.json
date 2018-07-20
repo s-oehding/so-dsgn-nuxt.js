@@ -15,7 +15,8 @@
   "dependencies": {
     "bulma": "^0.7.1",
     "dotenv": "^6.0.0",
-    "nuxt": "^1.0.0"
+    "nuxt": "^1.0.0",
+    "nuxt-buefy": "^0.1.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
