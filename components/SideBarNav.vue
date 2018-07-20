@@ -1,37 +1,32 @@
 <template>
   <div class="column is-sidebar is-sidebar-menu is-hidden-mobile">
     <aside class="menu">
-      <p class="menu-label">
-        General
-      </p>
       <ul class="menu-list">
-        <li><a>Dashboard</a></li>
-        <li><a>Customers</a></li>
+        <li><a>Home</a></li>
+        <li><a>About</a></li>
       </ul>
       <p class="menu-label">
-        Administration
+        Blog
       </p>
       <ul class="menu-list">
-        <li><a>Team Settings</a></li>
+        <li><a>Categorys</a></li>
         <li>
-          <a class="is-active">Manage Your Team</a>
+          <a class="is-active">Category one</a>
           <ul>
-            <li><a>Members</a></li>
-            <li><a>Plugins</a></li>
-            <li><a>Add a member</a></li>
+            <li><a>Subcat</a></li>
+            <li><a>Subcat</a></li>
+            <li><a>Subcat</a></li>
           </ul>
         </li>
-        <li><a>Invitations</a></li>
-        <li><a>Cloud Storage Environment Settings</a></li>
-        <li><a>Authentication</a></li>
+        <li><a>Category Two</a></li>
+        <li><a>Category Three</a></li>
       </ul>
       <p class="menu-label">
-        Transactions
+        Projects
       </p>
       <ul class="menu-list">
-        <li><a>Payments</a></li>
-        <li><a>Transfers</a></li>
-        <li><a>Balance</a></li>
+        <li><a>Clients</a></li>
+        <li><a>Portfolio</a></li>
       </ul>
     </aside>
   </div>
