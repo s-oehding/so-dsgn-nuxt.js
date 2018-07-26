@@ -25,6 +25,19 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon {
+  &.is-medium {
+    [class^="socicon-"], [class*=" socicon-"] {
+      font-size: 1.25rem;
+    }
+  }
+  &.is-large {
+    [class^="socicon-"], [class*=" socicon-"] {
+      font-size: 1.5rem;
+    }
+  }
+}
+
 .socicon-internet:before {
   content: "\e957";
 }
