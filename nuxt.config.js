@@ -21,12 +21,18 @@ module.exports = {
   */
   loading: { color: '#3B8070' },
   /*
+  ** Global CSS
+  */
+  css: [
+    { src: '~/assets/main.scss', lang: 'scss' }
+  ],
+  /*
   ** Load Modules
   */
   modules: [
     [
       'nuxt-sass-resources-loader',
-      './assets/main.scss'
+      '~/assets/_variables.scss'
     ],
     ['nuxt-buefy', { css: false, materialDesignIcons: true }]
   ],
@@ -51,6 +57,14 @@ module.exports = {
           loader: 'eslint-loader',
           exclude: /(node_modules)/
         })
+      }
+    },
+    /*
+    *  Fix PostCss Warning caused by css variables used by Bulma
+    */
+    postcss: {
+      plugins: {
+        'postcss-custom-properties': false
       }
     }
   },
