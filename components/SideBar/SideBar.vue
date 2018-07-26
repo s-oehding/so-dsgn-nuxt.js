@@ -8,8 +8,19 @@
         <li><a>Clients</a></li>
         <li><a>Portfolio</a></li>
       </ul>
-      <div class="block connect">
-        <i class="socicon-500px"></i>
+      <div class="block connect has-text-centered">
+        <span class="icon is-large has-text-white">
+          <i class="socicon-github"></i>
+        </span>
+        <span class="icon is-large has-text-white">
+          <i class="socicon-linkedin"></i>
+        </span>
+        <span class="icon is-large has-text-white">
+          <i class="socicon-xing"></i>
+        </span>
+        <span class="icon is-large has-text-white">
+          <i class="socicon-soundcloud"></i>
+        </span>
       </div>
 
     </aside>
