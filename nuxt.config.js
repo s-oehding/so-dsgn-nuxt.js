@@ -24,12 +24,11 @@ module.exports = {
   ** Load Modules
   */
   modules: [
-    // provide path to the file with resources
     [
       'nuxt-sass-resources-loader',
-      './assets/main.scss',
-      ['nuxt-buefy', { css: false, materialDesignIcons: false }]
-    ]
+      './assets/main.scss'
+    ],
+    ['nuxt-buefy', { css: false, materialDesignIcons: true }]
   ],
   /*
   * Load Plugins and Components
