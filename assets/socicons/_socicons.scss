@@ -28,13 +28,16 @@
 .icon {
   &.is-medium {
     [class^="socicon-"], [class*=" socicon-"] {
-      font-size: 1.25rem;
+      font-size: 1rem;
     }
   }
   &.is-large {
     [class^="socicon-"], [class*=" socicon-"] {
       font-size: 1.5rem;
     }
+  }
+  &.is-rounded {
+    border-radius: .125rem;
   }
 }
 

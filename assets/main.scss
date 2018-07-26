@@ -4,5 +4,15 @@
 
 @import "~bulma/bulma";
 
+@import "./helpers";
+
 @import "./socicons/socicons";
 @import "./hamburgers/hamburgers";
+
+
+.page-enter-active, .page-leave-active {
+  transition: opacity .5s;
+}
+.page-enter, .page-leave-to {
+  opacity: 0;
+}
