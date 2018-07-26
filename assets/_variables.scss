@@ -9,6 +9,7 @@ $sidebar-width: 325px;
  */
 
 // Colors
+$primary:        orangered;
 
 $black:        hsl(0, 0%, 4%);
 $black-bis:    hsl(0, 0%, 7%);
@@ -80,3 +81,12 @@ $speed: 86ms;
 // Flags
 
 $variable-columns: true;
+
+// Menu List
+
+$menu-item-color: $white;
+$menu-item-radius: $radius-small !default;
+$menu-item-hover-color: $primary;
+$menu-item-hover-background-color: transparent;
+$menu-item-active-color: $primary;
+$menu-item-active-background-color: transparent;

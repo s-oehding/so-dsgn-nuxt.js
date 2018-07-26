@@ -3,7 +3,7 @@
     <aside class="menu">
       <app-logo/>
       <ul class="menu-list">
-        <li><nuxt-link to="/">Home</nuxt-link></li>
+        <li><nuxt-link to="/" exact>Home</nuxt-link></li>
         <li><nuxt-link to="/about">About</nuxt-link></li>
         <li><nuxt-link to="/portfolio">Portfolio</nuxt-link></li>
         <li><nuxt-link to="/projects">Projects</nuxt-link></li>
@@ -22,7 +22,6 @@
           <i class="socicon-soundcloud"></i>
         </span>
       </div>
-
     </aside>
   </div>
 </template>
@@ -50,7 +49,7 @@
 
 <style lang="scss">
   .is-sidebar {
-    background: $grey-dark;
+    background: $black;
     position: fixed;
     top: 0;
     left: 0;
@@ -59,7 +58,7 @@
   }
   .is-sidebar-menu {
     padding: 2.5rem;
-    background: $grey-dark;
+    background: $black-bis;
 
     .menu {
       display: flex;
@@ -68,9 +67,12 @@
       justify-content: space-between;
       li {
         a {
-          color: $white;
         }
       }
+    }
+
+    .icons {
+
     }
   }
   .connect {
