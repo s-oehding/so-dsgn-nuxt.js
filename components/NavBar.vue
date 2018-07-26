@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar">
+  <nav class="navbar is-fixed-bottom is-hidden-desktop">
     <div class="navbar-brand">
       <a class="navbar-item" href="http://bulma.io">
         <img src="http://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
@@ -12,16 +12,12 @@
       </a>
 
       <a class="navbar-item is-hidden-desktop" href="https://twitter.com/jgthms" target="_blank">
-      <span class="icon" style="color: #55acee;">
-        <i class="fa fa-twitter"></i>
-      </span>
+        <span class="icon" style="color: #55acee;">
+          <i class="fa fa-twitter"></i>
+        </span>
       </a>
 
-      <div class="navbar-burger burger" data-target="navMenubd-example">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+      <SideBarToggler></SideBarToggler>
     </div>
 
     <div id="navMenubd-example" class="navbar-menu">
@@ -29,12 +25,12 @@
       </div>
 
       <div class="navbar-end">
-        <a class="navbar-item is-hidden-desktop-only" href="https://github.com/jgthms/bulma" target="_blank">
+        <a class="navbar-item" href="https://github.com/jgthms/bulma" target="_blank">
         <span class="icon" style="color: #333;">
           <i class="fa fa-github"></i>
         </span>
         </a>
-        <a class="navbar-item is-hidden-desktop-only" href="https://twitter.com/jgthms" target="_blank">
+        <a class="navbar-item" href="https://twitter.com/jgthms" target="_blank">
         <span class="icon" style="color: #55acee;">
           <i class="fa fa-twitter"></i>
         </span>
