@@ -33,7 +33,5 @@ export default {
 </script>
 
 <style lang="scss">
-  .title {
-    color: $primary;
-  }
+
 </style>
