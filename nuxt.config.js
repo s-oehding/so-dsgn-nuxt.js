@@ -19,7 +19,10 @@ module.exports = {
   /*
   ** Customize the progress bar color
   */
-  loading: { color: '#3B8070' },
+  loading: {
+    color: 'orangered',
+    height: '3px'
+  },
   /*
   ** Customize router
   */
@@ -38,7 +41,10 @@ module.exports = {
   modules: [
     [
       'nuxt-sass-resources-loader',
-      '~/assets/_variables.scss'
+      [
+        '~/assets/_variables.scss',
+        '~/assets/mixins/*'
+      ]
     ],
     ['nuxt-buefy', { css: false, materialDesignIcons: true }]
   ],
