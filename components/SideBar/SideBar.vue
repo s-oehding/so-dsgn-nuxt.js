@@ -49,6 +49,7 @@
 
 <style lang="scss">
   .is-sidebar {
+    @include boxShadow(5);
     background: $black;
     position: fixed;
     top: 0;

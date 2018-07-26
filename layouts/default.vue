@@ -41,5 +41,6 @@
 
   .is-main-content {
     background: $grey-lighter;
+    z-index: -1;
   }
 </style>
