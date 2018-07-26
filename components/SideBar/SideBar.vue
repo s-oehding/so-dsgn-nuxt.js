@@ -9,16 +9,16 @@
         <li><nuxt-link to="/projects">Projects</nuxt-link></li>
       </ul>
       <div class="block connect has-text-centered">
-        <span class="icon is-medium is-rounded has-background-primary has-text-dark">
+        <span class="icon is-medium is-rounded has-background-primary has-text-black-bis">
           <i class="socicon-github"></i>
         </span>
-        <span class="icon is-medium is-rounded has-background-primary has-text-dark">
+        <span class="icon is-medium is-rounded has-background-primary has-text-black-bis">
           <i class="socicon-linkedin"></i>
         </span>
-        <span class="icon is-medium is-rounded has-background-primary has-text-dark">
+        <span class="icon is-medium is-rounded has-background-primary has-text-black-bis">
           <i class="socicon-xing"></i>
         </span>
-        <span class="icon is-medium is-rounded has-background-primary has-text-dark">
+        <span class="icon is-medium is-rounded has-background-primary has-text-black-bis">
           <i class="socicon-soundcloud"></i>
         </span>
       </div>
