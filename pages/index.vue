@@ -28,6 +28,9 @@ import AppLogo from '~/components/AppLogo.vue'
 export default {
   components: {
     AppLogo
+  },
+  async fetch ({ store, params }) {
+    await store.dispatch('GET_REGIONS');
   }
 }
 </script>
