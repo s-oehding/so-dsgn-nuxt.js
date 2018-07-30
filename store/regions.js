@@ -1,21 +1,28 @@
-import ApiClient from '../helpers/apiClient'
+import ApiClient from '~/plugins/apiClient'
 
 const state = () => ({
-  list: []
+  list: null
 })
 
-const getters = { }
+const getters = {
+  regions(state) {
+    return state.list
+  }
+}
 
-const mutations = { }
+const mutations = {
+  SET_REGIONS  ( state, data ) {
+    state.list = data
+  }
+}
 
 const actions = {
-  async GET_REGIONS ({ commit }) {
-    const { data } = ApiClient.get('/regions/listRegions')
+  async getRegions ({commit}) {
+    const { data } = await ApiClient.get('/regions/listRegions')
+    console.log(data)
     commit('SET_REGIONS', data)
   },
-  SET_REGIONS  ({ commit, data }) {
-    this.state.list = data
-  }
+
 }
 
 export default {

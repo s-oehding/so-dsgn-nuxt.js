@@ -46,13 +46,16 @@ module.exports = {
         '~/assets/mixins/*'
       ]
     ],
-    ['nuxt-buefy', { css: false, materialDesignIcons: true }]
+    ['nuxt-buefy', { css: false, materialDesignIcons: true }],
+    '@nuxtjs/dotenv'
   ],
   /*
   * Load Plugins and Components
   */
   plugins: [
-    '~/plugins/global.js'
+    '~/plugins/global.js',
+    '~/plugins/axios.js',
+    '~/plugins/apiClient.js'
   ],
   /*
   ** Build configuration

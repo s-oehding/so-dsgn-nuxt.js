@@ -29,8 +29,8 @@ export default {
   components: {
     AppLogo
   },
-  async fetch ({ store, params }) {
-    await store.dispatch('GET_REGIONS');
+  fetch ({ store, params }) {
+    store.dispatch('regions/getRegions');
   }
 }
 </script>
