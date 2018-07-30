@@ -1,7 +1,6 @@
-require('dotenv').config()
-import axios from 'axios'
+import axios from '~/plugins/axios'
 
-const ApiClient={
+const ApiClient = {
 
   async get(endpoint, params) {
     try {
@@ -13,7 +12,7 @@ const ApiClient={
   },
 
   urlBuilder (endpoint) {
-    return process.env.API_URL + endpoint + '?token=' + process.env.API_TOKEN
+    return endpoint + '?token=' + process.env.cockpit.apiToken
   }
 
 }
