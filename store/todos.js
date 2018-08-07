@@ -18,6 +18,7 @@ const mutations = {
     todo.done = !todo.done
   }
 }
+
 const actions = { }
 
 export default {
@@ -25,4 +26,4 @@ export default {
   getters,
   mutations,
   actions,
-};
+}

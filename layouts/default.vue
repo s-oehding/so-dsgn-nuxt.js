@@ -11,8 +11,8 @@
 <style lang="scss">
 
   #main-content {
-    max-width: calc(100% - 325px);
-    transform: translatex(325px);
+    display: flex;
+    flex: 0 0 auto;
   }
 
   .columns {
