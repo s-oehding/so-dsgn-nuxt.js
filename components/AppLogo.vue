@@ -1,18 +1,37 @@
 <template>
   <div class="logo">
-   <img src="~/static/space-cube.svg"/>
+   <h1 class="title" :style="'color: ' + color">{{ text }} <span class="cursor">|</span></h1>
   </div>
 </template>
+
+<script>
+
+  export default {
+    props: ['text', 'color', ]
+  }
+</script>
 
 <style>
 
   .logo {
     font-size: 24px;
-    font-family: "Fira Sans ExtraBold";
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .cursor {
+    animation: blink 1s infinite linear;
+  }
+
+  @keyframes blink {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: inherit;
+    }
   }
 
 @keyframes turn {

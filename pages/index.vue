@@ -2,9 +2,8 @@
   <section class="container content">
     <div class="columns">
       <div class="column">
-        <app-logo/>
         <h1 class="title">
-          pxlwrx.de
+          so-dsgn.de
         </h1>
         <h2 class="subtitle">
           Frontend Application for my personal Website

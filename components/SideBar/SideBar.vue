@@ -1,7 +1,4 @@
 <template>
-
-
-
   <aside id="sidebar" :class="{ 'is-open': open }">
     <div class="inner-wrapper">
       <div class="icon-bar">
@@ -9,7 +6,11 @@
       </div>
       <div class="sidebar">
         <div class="sidebar-top">
-          <app-logo/>
+          <app-logo
+            class=""
+            text="S0_DSGN"
+            color="white"
+          ></app-logo>
         </div>
         <div class="sidebar-center">
           <ul class="menu-list">
@@ -65,7 +66,7 @@
 <style lang="scss" scoped>
 
   .sidebar-top {
-  padding: 2rem;
+    padding: 2rem;
   }
 
   .sidebar-bottom {
@@ -119,6 +120,7 @@
     flex-shrink: 1;
     will-change: transform, flex-basis;
     transition: transform, flex-basis 0.25s ease-out;
+    z-index: 10;
 
     .inner-wrapper {
       display: flex;
@@ -132,6 +134,7 @@
     .icon-bar {
       background: $iconbar-bg-color;
       width: $iconbar-width;
+      box-shadow: 1px 0px 5px #3a3a3a;
       height: 100vh;
       display: inline;
 
