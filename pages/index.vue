@@ -39,7 +39,6 @@ export default {
 <style lang="scss">
   .container {
     background-size: cover;
-    height: 100vh;
   }
   .content {
     padding: 0 1rem;

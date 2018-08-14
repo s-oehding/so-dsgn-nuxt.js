@@ -18,7 +18,7 @@ const mutations = {
 
 const actions = {
   async getRegions ({commit}) {
-    const { data } = await ApiClient.get('/singletons/listSingletons')
+    const { data } = await ApiClient.get('/regions/listRegions')
     console.log(data)
     commit('SET_REGIONS', data)
   },

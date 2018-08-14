@@ -22,7 +22,7 @@
   }
 
   .cursor {
-    animation: blink 1s infinite linear;
+    animation: blink 1s infinite step-end;
   }
 
   @keyframes blink {
