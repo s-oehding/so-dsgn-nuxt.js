@@ -2,7 +2,7 @@
  * Layout
  */
 $sidebar-width: 325px;
-
+$iconbar-width: 55px;
 
 /*
  * Bulma
@@ -33,6 +33,13 @@ $cyan:         hsl(204, 86%,  53%);
 $blue:         hsl(217, 71%,  53%);
 $purple:       hsl(271, 100%, 71%);
 $red:          hsl(348, 100%, 61%);
+
+
+
+$sidebar-bg-color: #222222;
+$iconbar-bg-color: #1b1b1b;
+
+$main-content-bg-color: #fff;
 
 // Typography
 

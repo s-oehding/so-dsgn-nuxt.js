@@ -1,5 +1,5 @@
 <template>
-  <div class="columns is-page-wrapper is-fullheight">
+  <div id="page-wrapper" class="columns is-page-wrapper is-fullheight" :class="{ 'sidebar-open': open }">
     <SideBar></SideBar>
     <div id="main-content" class="column is-main-content">
       <NavBar></NavBar>
@@ -8,11 +8,50 @@
   </div>
 </template>
 
+<script>
+
+  export default {
+    mounted () {
+    },
+
+    computed: {
+      open () {
+        return this.$store.state.ui.sidebar.open
+      }
+    },
+
+    watch: {
+      open: function (open) {
+      }
+    }
+  }
+
+</script>
+
 <style lang="scss">
 
-  #main-content {
+  #page-wrapper {
+    height: 100vh;
+    width: 100vw;
     display: flex;
-    flex: 0 0 auto;
+    &.sidebar-open {
+      aside {
+        flex-basis: calc(#{$sidebar-width} + #{$iconbar-width});
+      }
+      #main-content {
+        flex-basis: calc(100vw - #{$sidebar-width} + #{$iconbar-width});
+      }
+    }
+  }
+
+  #main-content {
+    background: $main-content-bg-color;
+    height: 100vh;
+    flex-basis: calc(100vw - #{$iconbar-width});
+    will-change: transform, flex-basis;
+    transition: transform, flex-basis 0.25s ease-out;
+    flex-grow: 1;
+    flex-shrink: 1;
   }
 
   .columns {
@@ -40,7 +79,5 @@
   }
 
   .is-main-content {
-    background: $grey-lighter;
-    z-index: -1;
   }
 </style>

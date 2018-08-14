@@ -1,13 +1,15 @@
 <template>
-  <button
-    class="hamburger hamburger--arrow"
-    :class="{ 'is-active': open }"
-    type="button"
+  <a
+    role="button"
+    id="burger"
+    class="tgl navbar-burger"
+    aria-label="menu"
+    aria-expanded="false"
     @click="handleClick">
-    <span class="hamburger-box">
-      <span class="hamburger-inner"></span>
-    </span>
-  </button>
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+    <span aria-hidden="true"></span>
+  </a>
 </template>
 
 <script>
@@ -18,10 +20,10 @@
         return this.$store.state.ui.sidebar.open
       }
     },
-
     methods: {
       handleClick () {
         this.$store.dispatch('ui/toggleSidebar')
+        console.log('click')
       }
     }
   }
