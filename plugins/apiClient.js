@@ -5,7 +5,7 @@ const ApiClient = {
   async get(endpoint, params) {
     try {
       const response = await axios.get(this.urlBuilder(endpoint), params);
-      return this.response
+      return response
     } catch (error) {
       return error
     }
