@@ -1,6 +1,6 @@
 <template>
   <div class="logo">
-    so_dsgn&ensp;[$]<span class="blink">&ensp;_</span>
+   <img src="~/static/space-cube.svg"/>
   </div>
 </template>
 
