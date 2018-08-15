@@ -2,7 +2,48 @@
   <aside id="sidebar" :class="{ 'is-open': open }">
     <div class="inner-wrapper">
       <div class="icon-bar">
-        <SideBarToggler></SideBarToggler>
+        <div class="sidebar-top">
+          <SideBarToggler></SideBarToggler>
+        </div>
+        <div class="sidebar-center">
+          <ul class="menu-list">
+            <li>
+              <nuxt-link class="home" to="/" exact>
+                <span class="icon">
+                  <i class="oi " data-glyph="home"></i>
+                </span>
+              </nuxt-link>
+            </li>
+            <li>
+              <nuxt-link to="/about">
+                <span class="icon">
+                  <i class="oi " data-glyph="person"></i>
+                </span>
+              </nuxt-link>
+            </li>
+            <li>
+              <nuxt-link to="/portfolio">
+                <span class="icon">
+                  <i class="oi " data-glyph="pencil"></i>
+                </span>
+              </nuxt-link>
+            </li>
+            <li>
+              <nuxt-link to="/projects">
+                <span class="icon">
+                  <i class="oi " data-glyph="terminal"></i>
+                </span>
+              </nuxt-link>
+            </li>
+          </ul>
+        </div>
+        <div class="sidebar-bottom">
+          <div class="block connect has-text-centered">
+          <span class="icon is-medium is-rounded has-background-black-bis has-text-black-bis">
+            <i class="socicon-github"></i>
+          </span>
+          </div>
+        </div>
       </div>
       <div class="sidebar">
         <div class="sidebar-top">
@@ -14,10 +55,18 @@
         </div>
         <div class="sidebar-center">
           <ul class="menu-list">
-            <li><nuxt-link to="/" exact>Home</nuxt-link></li>
-            <li><nuxt-link to="/about">About</nuxt-link></li>
-            <li><nuxt-link to="/portfolio">Portfolio</nuxt-link></li>
-            <li><nuxt-link to="/projects">Projects</nuxt-link></li>
+            <li class="home">
+              <nuxt-link class="home" to="/" exact>Home</nuxt-link>
+            </li>
+            <li>
+              <nuxt-link to="/about">About</nuxt-link>
+            </li>
+            <li>
+              <nuxt-link to="/portfolio">Portfolio</nuxt-link>
+            </li>
+            <li>
+              <nuxt-link to="/projects">Projects</nuxt-link>
+            </li>
           </ul>
         </div>
         <div class="sidebar-bottom">
@@ -46,11 +95,11 @@
 
   export default {
     name: 'sidebar',
-    mounted () {
+    mounted() {
     },
 
     computed: {
-      open () {
+      open() {
         return this.$store.state.ui.sidebar.open
       }
     },
@@ -63,10 +112,24 @@
 
 </script>
 
+
+
 <style lang="scss" scoped>
+  @mixin menuHover($name, $color, $color-hover) {
+    .#{$name} {
+
+      color: #{$color};
+      &:focus, &:hover {
+        color: #{$color-hover};
+      }
+    }
+  }
 
   .sidebar-top {
-    padding: 2rem;
+    height: 3rem;
+  }
+
+  .sidebar-center {
   }
 
   .sidebar-bottom {
@@ -106,9 +169,24 @@
 
     }
   }
+
   .connect {
     .icon {
       margin-right: .5rem;
+    }
+  }
+
+  .menu-list {
+    li {
+      @include menuHover(home, $white, $primary);
+      a {
+        height: $iconbar-width;
+        min-width: $iconbar-width;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: initial;
+      }
     }
   }
 
@@ -136,7 +214,18 @@
       width: $iconbar-width;
       box-shadow: 1px 0px 5px #3a3a3a;
       height: 100vh;
-      display: inline;
+      display: inline-flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .menu-list {
+        li {
+          a {
+            justify-content: center;
+          }
+        }
+      }
+
 
       .navbar-burger {
         display: block;
