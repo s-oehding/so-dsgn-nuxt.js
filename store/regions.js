@@ -18,11 +18,10 @@ const mutations = {
 
 const actions = {
   async getRegions ({commit}) {
-    const { data } = await ApiClient.get('/regions/listRegions')
-    console.log(data)
+    let data = await ApiClient.get('/regions/listRegions')
+    //console.log('Regions Store: ', data)
     commit('SET_REGIONS', data)
-  },
-
+  }
 }
 
 export default {
@@ -30,4 +29,4 @@ export default {
   getters,
   mutations,
   actions,
-};
+}

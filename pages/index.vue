@@ -29,9 +29,6 @@ import AppLogo from '~/components/AppLogo.vue'
 export default {
   components: {
     AppLogo
-  },
-  fetch ({ store, params }) {
-    store.dispatch('regions/getRegions');
   }
 }
 </script>
