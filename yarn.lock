@@ -3894,6 +3894,10 @@ mkdirp@0.5.1, "mkdirp@>=0.5 0", mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.0, mkd
   dependencies:
     minimist "0.0.8"
 
+momentum-slider@^0.0.7:
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/momentum-slider/-/momentum-slider-0.0.7.tgz#7ae7f7f7f222219fd17bbb48d8940a0927883f88"
+
 move-concurrently@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/move-concurrently/-/move-concurrently-1.0.1.tgz#be2c005fda32e0b29af1f05d7c4b33214c701f92"

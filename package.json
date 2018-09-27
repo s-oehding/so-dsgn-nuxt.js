@@ -15,6 +15,7 @@
   "dependencies": {
     "@nuxtjs/dotenv": "^1.1.1",
     "bulma": "^0.7.1",
+    "momentum-slider": "^0.0.7",
     "nuxt": "^1.0.0",
     "nuxt-buefy": "^0.1.0",
     "open-iconic": "^1.1.1"

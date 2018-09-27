@@ -21,8 +21,7 @@
     },
 
     watch: {
-      open: function (open) {
-      }
+      open: function (open) {}
     }
   }
 
