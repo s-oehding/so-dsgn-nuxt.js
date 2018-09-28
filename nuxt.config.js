@@ -55,12 +55,17 @@ module.exports = {
   plugins: [
     '~/plugins/global.js',
     '~/plugins/axios.js',
-    '~/plugins/apiClient.js'
+    '~/plugins/apiClient.js',
+    { src: '~/plugins/vue-agile', ssr: false }
   ],
   /*
   ** Build configuration
   */
   build: {
+    /*
+     * Vendor Plugins
+     */
+    vendor: [],
     /*
     ** Run ESLint on save
     */
