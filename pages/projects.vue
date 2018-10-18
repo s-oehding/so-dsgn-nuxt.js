@@ -1,24 +1,17 @@
 <template>
   <section class="container">
-    <div>
-      <h1 class="title">
-        PROJECTS PAGE
-      </h1>
-      <h2 class="subtitle">
-        Frontend Application for my personal Website
-      </h2>
-    </div>
+      <!-- Container for all sliders, and pagination -->
+      <no-ssr>
+
+      </no-ssr>
   </section>
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue'
 
-export default {
-  components: {
-    AppLogo
+  export default {
+
   }
-}
 </script>
 
 <style lang="scss">
