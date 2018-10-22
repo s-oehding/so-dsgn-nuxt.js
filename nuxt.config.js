@@ -13,8 +13,9 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Frontend Application for my personal Website' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" }
+    ],
   },
   /*
   ** Customize the progress bar color
@@ -56,7 +57,8 @@ module.exports = {
     '~/plugins/global.js',
     '~/plugins/axios.js',
     '~/plugins/apiClient.js',
-    { src: '~/plugins/vue-agile', ssr: false }
+    { src: '~/plugins/vue-agile', ssr: false },
+    { src: '~/plugins/v-tiny-slider', ssr: false }
   ],
   /*
   ** Build configuration
@@ -65,7 +67,7 @@ module.exports = {
     /*
      * Vendor Plugins
      */
-    vendor: [],
+    vendor: ['tiny-slider'],
     /*
     ** Run ESLint on save
     */

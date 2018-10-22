@@ -18,9 +18,11 @@
     "nuxt": "^1.0.0",
     "nuxt-buefy": "^0.1.0",
     "open-iconic": "^1.1.1",
+    "tiny-slider": "^2.8.7",
     "vue-agile": "^0.3.7",
     "vue-plain-slider": "^1.1.0",
-    "vue-server-renderer": "2.5.17"
+    "vue-server-renderer": "2.5.17",
+    "vue-tiny-slider": "^0.1.28"
   },
   "devDependencies": {
     "axios": "^0.18.0",
